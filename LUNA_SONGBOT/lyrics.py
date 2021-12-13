@@ -7,7 +7,8 @@ from telegram.ext import CommandHandler, MessageHandler, Filters, ConversationHa
 from telegram.error import BadRequest
 from telegram import ForceReply
 
-from LUNA_SONGBOT import  typing, LOG, GENIUS
+from LUNA_SONGBOT import  typing, GENIUS
+from bot import LOG
 from LUNA_SONGBOT.Script import script as st
 
 ARTIST, LYRICS = range(2)
