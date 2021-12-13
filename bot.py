@@ -16,7 +16,7 @@ class pbot(Client):
             api_id = int(os.environ["API_ID"]),
             api_hash = os.environ["API_HASH"], 
             workers=50,
-            plugins={"root": "luna_songbot"},
+            plugins={"root": "LUNA_SONGBOT"},
             sleep_threshold=5,
         )
 
