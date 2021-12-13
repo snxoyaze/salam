@@ -1,10 +1,13 @@
 import logging
-import logging.config
 
-# Get logging configurations
-logging.config.fileConfig('logging.conf')
-logging.getLogger().setLevel(logging.ERROR)
+#  logging
+logging.basicConfig(
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
+)
+
 LOG = logging.getLogger(__name__)
+logger.info(msg="Logging started...")
+
 
 
 
