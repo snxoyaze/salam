@@ -4,7 +4,7 @@ import logging.config
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.ERROR)
-
+LOG = logging.getLogger(__name__)
 
 
 
