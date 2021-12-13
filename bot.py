@@ -11,7 +11,7 @@ LOG = logging.getLogger(__name__)
 
 
 
-class pbot(Client):
+class pbot:
 
     def __init__(self):
         super().__init__(
