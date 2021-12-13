@@ -1,0 +1,10 @@
+python-telegram-bot==12.8
+Pyrogram==1.2.9
+TgCrypto==1.2.2
+yt-dlp
+youtube_search_python==1.4.9
+youtube_search
+asyncio
+requests
+future
+lyricsgenius
