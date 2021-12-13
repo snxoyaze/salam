@@ -5,9 +5,9 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
 )
 
-LOG = logging.getLogger(__name__)
+logger = logging.getLogger(__name__)
 logger.info(msg="Logging started...")
-
+LOG = logging.getLogger(__name__)
 
 
 
