@@ -14,7 +14,7 @@ from yt_dlp import YoutubeDL
 from youtube_search import YoutubeSearch
 from youtubesearchpython import SearchVideos
 from LUNA_SONGBOT import get_text, progress
-from LUNA_SONGBOT import pbot
+from bot import pbot
 
 
 
