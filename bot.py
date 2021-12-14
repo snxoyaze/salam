@@ -13,9 +13,9 @@ LOG = logging.getLogger(__name__)
 
 
 
-class pbot: bot_token = os.environ["BOT_TOKEN"],
-            api_id = int(os.environ["API_ID"]),
-            api_hash = os.environ["API_HASH"], 
+class pbot: api_id = int(environ['API_ID'])
+            api_hash = environ['API_HASH']
+            bot_token = environ['BOT_TOKEN']
             workers=50,
             plugins={"root": "LUNA_SONGBOT"},
             sleep_threshold=5,
