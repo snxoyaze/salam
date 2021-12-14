@@ -1,6 +1,7 @@
 import os
 from os import environ
 import logging
+from config import BOT_TOKEN, API_ID, API_HASH 
 
 #  logging
 logging.basicConfig(
@@ -13,9 +14,9 @@ LOG = logging.getLogger(__name__)
 
 
 
-class pbot: bot_token = environ['BOT_TOKEN']
-            api_id = int(environ['API_ID'])
-            api_hash = environ['API_HASH']
+class pbot: bot_token = BOT_TOKEN
+            api_id = API_ID
+            api_hash = API_HASH
             workers=50,
             plugins={"root": "LUNA_SONGBOT"},
             sleep_threshold=5,
