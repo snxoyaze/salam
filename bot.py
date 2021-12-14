@@ -19,9 +19,9 @@ LOG = logging.getLogger(__name__)
 
 pbot = pyrogram.Client(
       "luna_songbot",
-       bot_token=BOT_TOKEN,
-       api_id=APP_ID,
-       api_hash=API_HASH,
+       bot_token=Config.BOT_TOKEN,
+       api_id=Config.APP_ID,
+       api_hash=Config.API_HASH,
        plugins={"root": "LUNA_SONGBOT"},
        sleep_threshold=5,
    )
