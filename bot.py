@@ -2,7 +2,6 @@ import os
 from os import environ
 from pyrogram import Client, filters
 import logging
-from config import BOT_TOKEN, API_ID, API_HASH 
 import pyrogram
 
 #  logging
