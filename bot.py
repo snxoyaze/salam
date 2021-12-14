@@ -13,11 +13,7 @@ LOG = logging.getLogger(__name__)
 
 
 
-class pbot:
-
-    def __init__(self):
-        super().__init__(
-            bot_token = os.environ["BOT_TOKEN"],
+class pbot: bot_token = os.environ["BOT_TOKEN"],
             api_id = int(os.environ["API_ID"]),
             api_hash = os.environ["API_HASH"], 
             workers=50,
