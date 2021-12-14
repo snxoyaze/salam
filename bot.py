@@ -2,6 +2,7 @@ import os
 from os import environ
 import logging
 from config import BOT_TOKEN, API_ID, API_HASH 
+import pyrogram
 
 #  logging
 logging.basicConfig(
@@ -14,13 +15,14 @@ LOG = logging.getLogger(__name__)
 
 
 
-class pbot: bot_token=BOT_TOKEN,
-            api_id=API_ID,
-            api_hash=API_HASH,
-            workers=50,
-            plugins={"root": "LUNA_SONGBOT"},
-            sleep_threshold=5,
-        )
+pbot = pyrogram.Client(
+      "luna_songbot",
+       bot_token=BOT_TOKEN,
+       api_id=APP_ID,
+       api_hash=API_HASH,
+       plugins={"root": "LUNA_SONGBOT"},
+       sleep_threshold=5,
+   )
 
         
 
